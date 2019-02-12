@@ -1,0 +1,88 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    </head>
+    <body>
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+            <h5 class="my-0 mr-md-auto font-weight-normal">Alpha Tech Academy</h5>
+            <nav class="my-2 my-md-0 mr-md-3">
+              <a class="p-2 text-dark" href="{% url 'ata'%}">Home</a>
+              <a class="p-2 text-dark" href="{% url 'blog'%}">Blog</a>
+              <a class="p-2 text-dark" href="{% url 'mentor'%}">Mentor</a>
+              <a class="p-2 text-dark" href="{% url 'mentee'%}">Mentee</a>
+              <a class="p-2 text-dark" href="{% url 'author'%}">Author</a>
+            </nav>
+        </div>
+        <div class="bg-biru">
+            <div class="container text-center">
+                <div>
+                    <div class="row">
+                        <div class="text-center col-md-12">
+                        <img src="{% static 'images/alpha-logo.png' %}">
+                    </div>
+                    <div class="text-center col-md-10 offset-md-1">
+                        <h1>Alpha Tech Academy</h1>
+                        <p>Alpha Tech Academy is a tech talent incubator that gives everyone (even non IT background) a chance to be a professional Tech Talent within 3 months, Contact Person: Email: academy@alphatech.id Mobile phone: 0877 9609 9530</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h2 class="text-center">Our Mentor</h2>
+        <br>
+        <div class="container-fluid">
+            <div class="row col-md-10 offset-md-1">
+                <div class="col-md-4">
+                    <img src="{% static 'images/people-andreas.png' %}">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="abu">Andreas Nugroho</h2>
+                    <p>Software Ninja (5 Years Experience)</p>
+                    <p>Great place to learn about programming. Come Join Us!</p>
+                </div>
+            </div>
+            <br>
+            <div class="row col-md-10 offset-md-1">
+                <div class="col-md-4">
+                    <img src="{% static 'images/people-ramdhan.png' %}">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="abu">Ramdhan Hidayat</h2>
+                    <p>Master of Chaos (10 Years Experience)</p>
+                    <p>We make this program with passion, hardwork and heart. Let's Get rock with us</p>
+                </div>
+            </div>
+            <br>
+            <div class="row col-md-10 offset-md-1">
+                <div class="col-md-4">
+                    <img src="{% static 'images/people-trimo.png' %}">
+                </div>
+                <div class="col-md-8">
+                    <h2>Trimo Laksono</h2>
+                    <p>Magician (8 Years Experience)</p>
+                    <p>The best place for who want to be a great IT talent</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <br>
+    <footer>
+        <div class="bg-biru padding_10">
+            <div class="container">
+                <div class="text-center">
+                    <span class="hitam">Our Product:</span>
+                    <img src="{% static 'images/logo-grey-alphapay.png' %}">
+                    <img src="{% static 'images/logo-grey-sepulsa.png' %}">
+                    <img src="{% static 'images/logo-grey-alphabill.png' %}">
+                </div>
+            </div>
+        </div>
+        <div class="bg-hitam text-center">
+            <p>Contact Person: Mobile Phone: 0877 9609 9530. Email: <span class="biru">academy@alphatech.id</span></p>
+        </div>
+    </footer>
+</html>

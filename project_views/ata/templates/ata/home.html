@@ -1,0 +1,122 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    </head>
+    <body>
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+            <h5 class="my-0 mr-md-auto font-weight-normal">Alpha Tech Academy</h5>
+            <nav class="my-2 my-md-0 mr-md-3">
+              <a class="p-2 text-dark" href="{% url 'ata'%}">Home</a>
+              <a class="p-2 text-dark" href="{% url 'blog'%}">Blog</a>
+              <a class="p-2 text-dark" href="{% url 'mentor'%}">Mentor</a>
+              <a class="p-2 text-dark" href="{% url 'mentee'%}">Mentee</a>
+              <a class="p-2 text-dark" href="{% url 'author'%}">Author</a>
+            </nav>
+        </div>  
+        <div class="bg-biru">
+            <div class="container text-center">
+                <div>
+                    <div class="row">
+                        <div class="text-center col-md-12">
+                        <img src="{% static 'images/alpha-logo.png' %}">
+                    </div>
+                    <div class="text-center col-md-10 offset-md-1">
+                        <h1>Alpha Tech Academy</h1>
+                        <p>Alpha Tech Academy is a tech talent incubator that gives everyone (even non IT background) a chance to be a professional Tech Talent within 3 months, Contact Person: Email: academy@alphatech.id Mobile phone: 0877 9609 9530</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container-fluid">
+            <div class="row col-md-10 offset-md-1">
+                <div class="col-md-4">
+                    <img src="{% static 'images/benefit.png' %}">
+                </div>
+                <div class="col-md-8">
+                    <h2>Learn Awesome Tech</h2>
+                    <p>You will learn about programming language, such as Python and Javascript, build back-end apps using Flask framework with microservice concept, build client-site apps using React Library, etc.</p>
+                </div>
+            </div>
+            <div class="row col-md-10 offset-md-1">
+                <div class="col-md-4">
+                    <img src="{% static 'images/search-job.png' %}">
+                </div>
+                <div class="col-md-8">
+                    <h2>Land New Job</h2>
+                    <p>If you can pass this awesome program, you will be part of our reliable tech team for especially Software Engineer position and other tech position such as Quality Engineer, System Analyst, etc.</p>
+                </div>
+            </div>
+            <div class="row col-md-10 offset-md-1">
+                <div class="col-md-4">
+                    <img src="{% static 'images/get-paid.png' %}">
+                </div>
+                <div class="col-md-8">
+                    <h2>Get Paid to Learn</h2>
+                    <p>Join for free and earn some money. Yes you read that right, no registration fee required to enter this program. To make things even better, you will receive pocket money just for participating. Cool, right?</p>
+                </div>
+            </div>
+            <div class="row col-md-10 offset-md-1">
+                <div class="col-md-4">
+                    <img src="{% static 'images/mission.png' %}">
+                </div>
+                <div class="col-md-8">
+                    <h2>Who Are We?</h2>
+                    <p>Alpha Tech Academy is a tech talent incubation that gives anyone any chance (not even an IT background) to learn within 3 months of being a professional Tech Talent. What is our mission? We want to improve capability Tech Talent in Indonesia</p>
+                    <h2>What is our mission?</h2>
+                    <p>We want to improve capability Tech Talent in Indonesia</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h2 class="text-center margin_bottom_50">What will you learn?</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-6 margin_bottom_50 text-center">
+                    <img src="{% static 'images/learn-html.png' %}">
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 margin_bottom_50 text-center">
+                    <img src="{% static 'images/learn-programming.png' %}">
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 margin_bottom_50 text-center">
+                    <img src="{% static 'images/learn-git.png' %}">
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 margin_bottom_50 text-center">
+                    <img src="{% static 'images/learn-api.png' %}">
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 margin_bottom_50 text-center">
+                    <img src="{% static 'images/learn-react.png' %}">
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 margin_bottom_50 text-center">
+                    <img src="{% static 'images/learn-tdd.png' %}">
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 margin_bottom_50 text-center">
+                    <img src="{% static 'images/learn-server.png' %}">
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 margin_bottom_50 text-center">
+                    <img src="{% static 'images/learn-scrum.png' %}">
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="bg-biru padding_10">
+            <div class="container">
+                <div class="text-center">
+                    <span class="hitam">Our Product:</span>
+                    <img src="{% static 'images/logo-grey-alphapay.png' %}">
+                    <img src="{% static 'images/logo-grey-sepulsa.png' %}">
+                    <img src="{% static 'images/logo-grey-alphabill.png' %}">
+                </div>
+            </div>
+        </div>
+        <div class="bg-hitam text-center">
+            <p>Contact Person: Mobile Phone: 0877 9609 9530. Email: <span class="biru">academy@alphatech.id</span></p>
+        </div>
+    </footer>
+</html>
