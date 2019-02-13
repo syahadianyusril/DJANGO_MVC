@@ -1,0 +1,53 @@
+.bg-white {
+    margin-bottom: 0 !important;
+}
+
+.bg-biru {
+    background-color:#00BFFF;
+    padding-top: 50px;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.margin_bottom_50 {
+    margin-bottom: 50px;
+}
+
+.padding_10 {
+    padding-top: 10;
+    padding-bottom: 10;
+}
+
+.bg-hitam {
+    background-color: black;
+    padding-top: 5;
+    color: white;
+}
+
+.bg-hitam p {
+    margin-bottom: 0;
+}
+
+.biru {
+    color:blue;
+}
+
+.hitam {
+    color: black;
+}
+
+.kotak_img {
+    height:200px;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    margin-left: 300px;
+}
+
+.img-blog {
+    width: 650px;
+}

@@ -1,0 +1,14 @@
+.bg-white {
+    margin-bottom: 0 !important;
+}
+
+.bg-biru {
+    background-color:#00BFFF;
+    padding-top: 50px;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.abu {
+    color: grey;
+}
