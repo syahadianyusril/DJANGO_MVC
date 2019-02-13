@@ -13,10 +13,7 @@
                 </div>
                 <h2>{{ data.judul}}</h2>
                 <div>
-                    <p>{{ data.konten|truncatewords:40 }}</p>
-                </div>
-                <div>
-                    <a href="{% url 'post_detail' post_id=data.id %}" target="_blank"><p>Baca selengkapnya</p></a>
+                    <p>{{ data.konten }}</p>
                 </div>
             </div>
         </div>

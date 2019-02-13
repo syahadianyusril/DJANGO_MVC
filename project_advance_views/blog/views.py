@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404, get_list_or_404
 from .models import Blog
 from .forms import PostForm
 from django.utils import timezone
@@ -21,3 +21,7 @@ def form(request):
     else:
         form = PostForm()
     return render(request,'blog/form_blog.html', {'form': form})
+
+def post_detail(request, post_id):
+    post_num = get_list_or_404(Blog, id=post_id)
+    return render(request, 'blog/blog_num.html', {'blogs': post_num})
